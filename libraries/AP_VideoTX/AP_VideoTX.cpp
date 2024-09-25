@@ -99,7 +99,7 @@ const uint16_t AP_VideoTX::VIDEO_CHANNELS[AP_VideoTX::MAX_BANDS][VTX_MAX_CHANNEL
     { 5362, 5399, 5436, 5473, 5510, 5547, 5584, 5621}, /* LO Race */
     { 1080, 1120, 1160, 1200, 1240, 1280, 1320, 1360}, /* Band 1G3_A */
     { 1080, 1120, 1160, 1200, 1258, 1280, 1320, 1360}, /* Band 1G3_B */
-    { 4950, 4950, 5020, 5050, 5080, 5110, 5140, 5170}  /* Band X  CHANGED!!! */
+    { 4950, 4970, 5020, 5050, 5080, 5110, 5140, 5170}  /* Band X  CHANGED!!! */
 };
 
 // mapping of power level to milliwatt to dbm
