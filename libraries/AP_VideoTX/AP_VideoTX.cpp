@@ -87,7 +87,7 @@ const AP_Param::GroupInfo AP_VideoTX::var_info[] = {
 
 extern const AP_HAL::HAL& hal;
 
-const char * AP_VideoTX::band_names[] = {"A","B","E","F","R","L","1G3_A","1G3_B","X"};
+const char * AP_VideoTX::band_names[] = {"A","B","E","F","R","L","M","X","Y","T"};
 
 const uint16_t AP_VideoTX::VIDEO_CHANNELS[AP_VideoTX::MAX_BANDS][VTX_MAX_CHANNELS] =
 {
@@ -97,9 +97,10 @@ const uint16_t AP_VideoTX::VIDEO_CHANNELS[AP_VideoTX::MAX_BANDS][VTX_MAX_CHANNEL
     { 5740, 5760, 5780, 5800, 5820, 5840, 5860, 5880}, /* Airwave */
     { 5658, 5695, 5732, 5769, 5806, 5843, 5880, 5917}, /* Race */
     { 5362, 5399, 5436, 5473, 5510, 5547, 5584, 5621}, /* LO Race */
-    { 1080, 1120, 1160, 1200, 1240, 1280, 1320, 1360}, /* Band 1G3_A */
-    { 1080, 1120, 1160, 1200, 1258, 1280, 1320, 1360}, /* Band 1G3_B */
-    { 4990, 5020, 5050, 5080, 5110, 5140, 5170, 5200}  /* Band X */
+    { 5658, 5678, 5717, 5737, 5835, 5855, 5894, 5914}, /* Band M */
+    { 4990, 5020, 5050, 5080, 5110, 5140, 5170, 5200}, /* Band X */
+    { 4991, 5045, 5097, 5128, 5329, 5435, 5477, 5590}, /* Band Y */
+    { 5176, 5261, 5323, 5360, 5946, 5974, 6013, 6030}  /* Band T */
 };
 
 // mapping of power level to milliwatt to dbm
