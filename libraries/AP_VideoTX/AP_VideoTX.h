@@ -56,15 +56,16 @@ public:
     static const char *band_names[];
 
     enum VideoBand {
-        BAND_A,
-        BAND_B,
-        BAND_E,
-        FATSHARK,
-        RACEBAND,
-        LOW_RACEBAND,
-        BAND_1G3_A,
-        BAND_1G3_B,
-        BAND_X,
+        A,
+        B,
+        E,
+        F,
+        R,
+        L,
+        M,
+        X,
+        Y,
+        T,
         MAX_BANDS
     };
 
