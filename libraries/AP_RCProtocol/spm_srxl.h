@@ -170,12 +170,17 @@ typedef enum
     SRXL_CMD_BIND_INFO,
 } SRXL_CMD;
 
-// VTX Band
-#define VTX_BAND_FATSHARK   (0)
-#define VTX_BAND_RACEBAND   (1)
-#define VTX_BAND_E_BAND     (2)
-#define VTX_BAND_B_BAND     (3)
-#define VTX_BAND_A_BAND     (4)
+// VTX Band, "A","B","E","F","R","L","M","X","Y","T"
+#define VTX_BAND_A   (0)
+#define VTX_BAND_B   (1)
+#define VTX_BAND_E   (2)
+#define VTX_BAND_F   (3)
+#define VTX_BAND_R   (4)
+#define VTX_BAND_L   (5)
+#define VTX_BAND_M   (6)
+#define VTX_BAND_X   (7)
+#define VTX_BAND_Y   (8)
+#define VTX_BAND_T   (9)
 
 // VTX Pit Mode
 #define VTX_MODE_RACE   (0)

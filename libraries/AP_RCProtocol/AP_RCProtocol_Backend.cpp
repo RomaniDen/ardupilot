@@ -124,23 +124,39 @@ void AP_RCProtocol_Backend::configure_vtx(uint8_t band, uint8_t channel, uint8_t
 {
     AP_VideoTX& vtx = AP::vtx();
     // VTX Band (0 = Fatshark, 1 = Raceband, 2 = E, 3 = B, 4 = A)
-    // map to TBS band A, B, E, Race, Airwave, LoRace
+    // map to TBS band "A","B","E","F","R","L","M","X","Y","T"
     switch (band) {
-    case VTX_BAND_FATSHARK:
-        vtx.set_configured_band(AP_VideoTX::VideoBand::FATSHARK);
+    case VTX_BAND_A:
+        vtx.set_configured_band(AP_VideoTX::VideoBand::A);
         break;
-    case VTX_BAND_RACEBAND:
-        vtx.set_configured_band(AP_VideoTX::VideoBand::RACEBAND);
+    case VTX_BAND_B:
+        vtx.set_configured_band(AP_VideoTX::VideoBand::B);
         break;
-    case VTX_BAND_E_BAND:
-        vtx.set_configured_band(AP_VideoTX::VideoBand::BAND_E);
+    case VTX_BAND_E:
+        vtx.set_configured_band(AP_VideoTX::VideoBand::E);
         break;
-    case VTX_BAND_B_BAND:
-        vtx.set_configured_band(AP_VideoTX::VideoBand::BAND_B);
+    case VTX_BAND_F:
+        vtx.set_configured_band(AP_VideoTX::VideoBand::F);
         break;
-    case VTX_BAND_A_BAND:
-        vtx.set_configured_band(AP_VideoTX::VideoBand::BAND_A);
+    case VTX_BAND_R:
+        vtx.set_configured_band(AP_VideoTX::VideoBand::R);
         break;
+    case VTX_BAND_L:
+        vtx.set_configured_band(AP_VideoTX::VideoBand::L);
+        break;
+    case VTX_BAND_M:
+        vtx.set_configured_band(AP_VideoTX::VideoBand::M);
+        break;
+    case VTX_BAND_X:
+        vtx.set_configured_band(AP_VideoTX::VideoBand::X);
+        break;
+    case VTX_BAND_Y:
+        vtx.set_configured_band(AP_VideoTX::VideoBand::Y);
+        break;
+    case VTX_BAND_T:
+        vtx.set_configured_band(AP_VideoTX::VideoBand::T);
+        break;
+    
     default:
         break;
     }
